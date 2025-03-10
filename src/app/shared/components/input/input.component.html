@@ -1,0 +1,18 @@
+<div
+  [ngClass]="{
+    'outlined-input': variant === 'outlined',
+    'default-input': variant === 'default',
+    'primary-input': color === 'primary',
+    'secondary-input': color === 'secondary',
+    'success-input': color === 'success',
+    'danger-input': color === 'danger',
+    'warning-input': color === 'warning',
+    'info-input': color === 'info',
+    'disabled-input': state === 'disabled',
+    'error-input': state === 'error',
+  }"
+>
+  <input [type]="type" placeholder=" " required [disabled]="state === 'disabled'">
+  <label for="input">{{ label }}</label>
+  <div class="error-message" *ngIf="state === 'error'">{{ errorMessage }}</div>
+</div>

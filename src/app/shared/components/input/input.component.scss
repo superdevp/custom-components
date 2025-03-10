@@ -1,0 +1,138 @@
+.outlined-input {
+  position: relative;
+  height: 50px;
+}
+
+.outlined-input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background: transparent;
+}
+
+.outlined-input label {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.outlined-input input:focus+label,
+.outlined-input input:not(:placeholder-shown)+label {
+  top: -10px;
+  left: 8px;
+  font-size: 12px;
+  color: #333;
+  background: transparent;
+  padding: 0 2px;
+}
+
+.outlined-input.primary-input input {
+  border-color: #007bff;
+}
+
+.outlined-input.primary-input label {
+  color: #007bff;
+}
+
+.outlined-input.primary-input input:focus+label,
+.outlined-input.primary-input input:not(:placeholder-shown)+label {
+  color: #007bff;
+}
+
+.outlined-input.secondary-input input {
+  border-color: #6c757d;
+}
+
+.outlined-input.secondary-input label {
+  color: #6c757d;
+}
+
+.outlined-input.secondary-input input:focus+label,
+.outlined-input.secondary-input input:not(:placeholder-shown)+label {
+  color: #6c757d;
+}
+
+.outlined-input.success-input input {
+  border-color: #28a745;
+}
+
+.outlined-input.success-input label {
+  color: #28a745;
+}
+
+.outlined-input.success-input input:focus+label,
+.outlined-input.success-input input:not(:placeholder-shown)+label {
+  color: #28a745;
+}
+
+.outlined-input.danger-input input {
+  border-color: #dc3545;
+}
+
+.outlined-input.danger-input label {
+  color: #dc3545;
+}
+
+.outlined-input.danger-input input:focus+label,
+.outlined-input.danger-input input:not(:placeholder-shown)+label {
+  color: #dc3545;
+}
+
+.outlined-input.warning-input input {
+  border-color: #ffc107;
+}
+
+.outlined-input.warning-input label {
+  color: #ffc107;
+}
+
+.outlined-input.warning-input input:focus+label,
+.outlined-input.warning-input input:not(:placeholder-shown)+label {
+  color: #ffc107;
+}
+
+.outlined-input.info-input input {
+  border-color: #17a2b8;
+}
+
+.outlined-input.info-input label {
+  color: #17a2b8;
+}
+
+.outlined-input.info-input input:focus+label,
+.outlined-input.info-input input:not(:placeholder-shown)+label {
+  color: #17a2b8;
+}
+
+.outlined-input.small-input {
+  height: 30px;
+}
+
+.outlined-input.medium-input {
+  height: 50px;
+}
+
+.outlined-input.disabled-input input {
+  background: #f0f0f0;
+  border-color: #ccc;
+  color: #aaa;
+}
+
+.outlined-input.disabled-input label {
+  color: #aaa;
+}
+
+.outlined-input.error-input input {
+  border-color: #dc3545;
+}
+
+.outlined-input.error-input label {
+  color: #dc3545;
+}
