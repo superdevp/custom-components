@@ -1,0 +1,33 @@
+<button
+  class="relative"
+  [ngClass]="{
+    'outlined-button': type === 'outlined',
+    'contained-button': type === 'contained',
+    'disabled-button': state === 'disabled' || state === 'loading',
+    'rounded-button': shape === 'rounded',
+    'square-button': shape === 'square',
+    'pill-button': shape === 'pill',
+    'primary-button': variant === 'primary',
+    'secondary-button': variant === 'secondary',
+    'success-button': variant === 'success',
+    'warning-button': variant === 'warning',
+    'danger-button': variant === 'danger',
+    'dark-button': variant === 'dark',
+  }"
+>
+  <span>{{ label }}</span>
+  @if (state === 'loading') {
+    <span
+      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 spinner"
+      [ngClass]="{
+        'primary-spinner': variant === 'primary',
+        'secondary-spinner': variant === 'secondary',
+        'success-spinner': variant === 'success',
+        'warning-spinner': variant === 'warning',
+        'danger-spinner': variant === 'danger',
+        'dark-spinner': variant === 'dark',
+        'contained-spinner': type === 'contained'
+      }"  
+    ></span>
+  }
+</button>

@@ -1,0 +1,198 @@
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  transition: all 0.1s ease;
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.outlined-button.primary-button {
+  border: 1px solid #3880ff;
+  background-color: #fff;
+  color: #3880ff;
+
+
+  &:hover {
+    background-color: #3880ff;
+    color: #fff;
+  }
+}
+
+.contained-button.primary-button {
+  background-color: #3880ff;
+  border-color: #3880ff;
+  color: #fff;
+
+  transition: all 0.1s ease;
+
+  &:hover {
+    background-color: #2962cc;
+  }
+}
+
+.outlined-button.secondary-button {
+  border: 1px solid #818181;
+  background-color: #fff;
+  color: #818181;
+
+  &:hover {
+    background-color: #818181;
+    color: #fff;
+  }
+}
+
+.contained-button.secondary-button {
+  background-color: #818181;
+  border-color: #818181;
+  color: #fff;
+
+  &:hover {
+    background-color: #6d6d6d;
+  }
+}
+
+.outlined-button.success-button {
+  border: 1px solid #3ad515;
+  background-color: #fff;
+  color: #3ad515;
+  
+  &:hover{
+    background-color: #3ad515;
+    color: #fff;
+  }
+}
+
+.contained-button.success-button {
+  background-color: #3ad515;
+  border-color: #3ad515;
+  color: #fff;
+
+  &:hover {
+    background-color: #27c100;
+  }
+}
+
+.outlined-button.warning-button {
+  border: 1px solid #ff9800;
+  background-color: #fff;
+  color: #ff9800;
+
+  &:hover {
+    background-color: #ff9800;
+    color: #fff;
+  }
+}
+
+.contained-button.warning-button {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  color: #fff;
+
+  &:hover {
+    background-color: #e68a00;
+  }
+}
+
+.outlined-button.danger-button {
+  border: 1px solid #f43f5e;
+  background-color: #fff;
+  color: #f43f5e;
+
+  &:hover {
+    background-color: #f43f5e;
+    color: #fff;
+  }
+}
+
+.contained-button.danger-button {
+  background-color: #f43f5e;
+  border-color: #f43f5e;
+  color: #fff;
+  
+  &:hover {
+    background-color: #d33f57;
+  }
+}
+
+.outlined-button.dark-button {
+  border: 1px solid #35404e;
+  background-color: #fff;
+  color: #35404e;
+
+  &:hover {
+    background-color: #35404e;
+    color: #fff;
+  }
+}
+
+.contained-button.dark-button {
+  background-color: #35404e;
+  border-color: #35404e;
+  color: #fff;
+  
+  &:hover {
+    background-color: #222d3a;
+  }
+}
+
+button.disabled-button {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transition: none;
+  transform: none;
+}
+
+button.rounded-button {
+  border-radius: 8px;
+}
+
+button.square-button {
+  border-radius: 0;
+}
+
+button.pill-button {
+  border-radius: 9999px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s cubic-bezier(0.4, 0.2, 0.5, 0.8) infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner.contained-spinner {
+  border-top-color: #000000;
+}
+
+.spinner.primary-spinner {
+  border-top-color: #3880ff;
+}
+
+.spinner.secondary-spinner {
+  border-top-color: #818181;
+}
+
+.spinner.success-spinner {
+  border-top-color: #3ad515;
+}
+
+.spinner.warning-spinner {
+  border-top-color: #ff9800;
+}
+
+.spinner.danger-spinner {
+  border-top-color: #f43f5e;
+}
+
+.spinner.dark-spinner {
+  border-top-color: #35404e;
+}
