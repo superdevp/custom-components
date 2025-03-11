@@ -169,10 +169,6 @@ button.pill-button {
   100% { transform: rotate(360deg); }
 }
 
-.spinner.contained-spinner {
-  border-top-color: #000000;
-}
-
 .spinner.primary-spinner {
   border-top-color: #3880ff;
 }
@@ -195,4 +191,8 @@ button.pill-button {
 
 .spinner.dark-spinner {
   border-top-color: #35404e;
+}
+
+.spinner.contained-spinner {
+  border-top-color: #000000;
 }
