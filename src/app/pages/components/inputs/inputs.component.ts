@@ -8,5 +8,5 @@ import { InputComponent } from '../../../shared/components/input/input.component
   styleUrl: './inputs.component.scss'
 })
 export class InputsComponent {
-
+  
 }
