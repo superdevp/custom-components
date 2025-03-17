@@ -1,0 +1,18 @@
+@if(type === "dot") {
+  <div class="three-dot-spinner">
+    <div class="dot" [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div class="dot" [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div class="dot" [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+  </div>
+} @else if(type === "spinner") {
+  <div [ngClass]="{'size-small': size === 'small', 'size-medium': size === 'medium', 'size-large': size === 'large'}" class="spinner">
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+    <div [ngClass]="{'bg-primary': color === 'primary', 'bg-secondary': color === 'secondary', 'bg-tertiary': color === 'tertiary'}"></div>
+  </div>
+}
