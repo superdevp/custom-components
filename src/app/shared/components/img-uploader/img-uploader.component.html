@@ -1,0 +1,18 @@
+<div>
+  <div class="input-file">
+    <p>Drag files here</p>
+    <p>or Choose file</p>
+    <input type="file" name="image-uploader" id="image-uploader" [(ngModel)]="inputFiles" (change)="chooseFile($event)" accept="image/png, image/jpeg, image/gif">
+  </div>
+  
+  <div class="file-viewer">
+    @if (files) {
+      @for (image of imgURLS; let i = $index; track i) {
+        <div class="file-item">
+          <button class="close" (click)="removeObject(i)">X</button>
+          <img [src]="image" alt="Image {{i + 1}}">
+        </div>
+      }
+    }
+  </div>
+</div>
